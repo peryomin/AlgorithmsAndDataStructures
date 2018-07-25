@@ -1,4 +1,4 @@
-package main.java.com.peryomin.main.java.com.peryomin.cases;
+package main.java.com.peryomin.cases;
 
 public class IsWeekendCase {
     public static void printDays() {
