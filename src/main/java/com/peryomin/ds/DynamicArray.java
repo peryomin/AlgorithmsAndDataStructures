@@ -37,8 +37,12 @@ public class DynamicArray<T> {
     }
 
     public void delete(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+
         for (int i = index; i < size - 1; i++) {
-            arr[i] = arr[i - 1];
+            arr[i] = arr[i + 1];
         }
 
         size--;
